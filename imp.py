@@ -25,10 +25,10 @@ try:
     image = Image.open(files[i])
 
     # Show the filename of a image in touple
-    print("Compressing image:", image.filename[-9:])
+    print("Compressing image:", image.filename)
 
     # Compressing every image in the touple
-    image.save(f"comprimida{i}.jpg", "JPEG", optimize=True, quality=10)
+    image.save(f"ImagenComprimida_{i}.jpg", "JPEG", optimize=True, quality=30)
 
   print("All images are compressed rigth")
   os.system("start .")
